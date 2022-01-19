@@ -7,7 +7,7 @@ See example GlistApp to find out how to use the plugin. In order to compile the 
 - Copy the example GlistApp to your myglistapps folder
 - Import the copied GlistApp into Eclipse from File->New->C/C++ Project->Empty or Existing Cmake Project
 - Open copied GlistApp->Properties->C/C++ Build->PATH->Value and add this to the end of the list (semicolon seperated):
-> ${workspace_loc}\..\..\..\..\glistplugins\gipOpenCV\prebuilts\bin
+> "${workspace_loc}\..\..\..\..\glistplugins\gipOpenCV\prebuilts\bin"
 - Add copied GlistApp into Run Configurations and launch it
 
 This plugin uses the Cairo library.
