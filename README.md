@@ -5,10 +5,10 @@ The plugin can draw text, image, line, rectangle, circle, arc, ellipse.
 
 See example GlistApp to find out how to use the plugin. In order to compile the example GlistApp;
 - Copy the example GlistApp to your myglistapps folder
-- Import the example GlistApp into Eclipse from File->New->C/C++ Project->Empty or Existing Cmake Project
-- Open GlistApp->Properties->C/C++ Build->PATH->Value and add this to the end of the list (semicolon seperated):
+- Import the copied GlistApp into Eclipse from File->New->C/C++ Project->Empty or Existing Cmake Project
+- Open copied GlistApp->Properties->C/C++ Build->PATH->Value and add this to the end of the list (semicolon seperated):
 ${workspace_loc}\..\..\..\..\glistplugins\gipOpenCV\prebuilts\bin
-- Add example GlistApp into Run Configurations and launch it
+- Add copied GlistApp into Run Configurations and launch it
 
 This plugin uses the Cairo library.
 Precompiled Cairo libraries for Windows is already supplied under libs dir.
