@@ -8,7 +8,7 @@ See example GlistApp to find out how to use the plugin. In order to compile the 
 - Import the copied GlistApp into Eclipse from File->New->C/C++ Project->Empty or Existing Cmake Project
 - Open copied GlistApp->Properties->C/C++ Build->PATH->Value and add this to the end of the list (after a semicolon):
 ```
-${workspace_loc}\..\..\..\..\glistplugins\gipCairo\prebuilts\bin
+${workspace_loc}\..\..\..\..\glistplugins\gipCairo\libs\bin
 ```
 - Add copied GlistApp into Run Configurations and launch it
 
