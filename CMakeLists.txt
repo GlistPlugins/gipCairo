@@ -30,7 +30,6 @@ if(WIN32)
 				${PLUGIN_LIBS_DIR}/bin
 	)
 	
-	#set(PLUGIN_LIBDIRS ${PLUGIN_LIBS_DIR}/lib/win32)
 	list(APPEND PLUGIN_LIBDIRS
 				${PLUGIN_LIBS_DIR}/lib/win32
 	)
@@ -46,6 +45,12 @@ endif(WIN32)
 if(WIN32)
 	list(APPEND PLUGIN_LINKLIBS
 				#Lib names
+				cairo
+				cairo-gobject
+				cairo-script-interpreter
+				fontconfig
+				pixman-1
+				lzo2
 	)
 elseif(LINUX)
 	list(APPEND PLUGIN_LINKLIBS
@@ -55,5 +60,6 @@ elseif(LINUX)
 elseif(APPLE)
 	list(APPEND PLUGIN_LINKLIBS
 				#Lib names
+				cairo
 	)
 endif(WIN32)
